@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cool Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+
+<div class="header-logo">
+	<img src="images/logo.png" width="250px">
+</div>
+
+
+<div class="howmuchplayer">
+	<button onclick="restartGame()">↩️ Restart</button>
+	<button id="levelButton" onclick="checkLevel()">Impossible Mode</button>
+
+</div>
+
+<div class="container">
+  <table id="theGame">
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>		
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+
+	<div id="whosturn">
+
+	</div>
+
+	<div id="infoGame">
+	</div>
+
+	<div class="endgame">
+		<div id="whowaswin" class="text"></div>
+		<button onclick="restartGame()">Play Again?</button>
+	</div>
+
+
+	<div class="mode-button">
+	<button onclick="toggleSinglePlayer()">Single Player</button><br/>
+	<button onclick="toggleMultiplayer()">Multiplayer</button>
+	</div>
+	<p class="levelIndicator">Status</p>
+	<p id="levelIndicator">Easy Mode</p>
+	
+	<div class="score-board">
+	<p id="xCurrentScore">X Score : 0</p>
+	<p id="oCurrentScore">O Score : 0</p>
+	<button onclick="resetScore()">Reset Score</button>
+	</div>
+
+</div>
+
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
